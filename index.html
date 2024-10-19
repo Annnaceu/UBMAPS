@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBMAPS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>UBMAPS</h1>
+        </div>
+        <nav>
+            <button class="login-btn">Login</button>
+            <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+    
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </div>
+    
+    <section class="main-section" id="home">
+        <h2>Bem Vindo ao UBMAPS</h2>
+        <p class="description">Localização fornecida gratuitamente para alunos, colaboradores e visitantes.</p>
+        <div class="login-container">
+            <h3>Faça seu Login</h3>
+            <form action="/login" method="POST">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+
+        
+        <div class="map-container">
+            <img src="mapa_ubm.png" alt="Mapa UBM" class="map-img">
+        </div>
+    </section>
+
+    
+    <div class="robot-assistant" id="robot-assistant">
+        <div class="robot-box">
+            <p class="robot-text">Posso ajudar você a encontrar seu caminho!</p>
+            <img src="robot-img.png" alt="Robô Assistente" class="robot-img" onclick="toggleChat()">
+            <div class="assistant-chat" id="assistant-chat">
+                <p><strong>Robô:</strong> Olá! Como posso te ajudar hoje?</p>
+                <input type="text" placeholder="Digite sua pergunta...">
+                <button class="send-btn">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer-section">
+        <div class="footer-content">
+            <h2>UBMAPS - Sua Localização Facilitada</h2>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Ajuda</h3>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Dúvidas Frequentes (FAQ)</a></li>
+                        <li><a href="#">Suporte Técnico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Informações</h3>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Localização</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("active");
+        }
+
+    
+        function toggleChat() {
+            const chat = document.getElementById("assistant-chat");
+            chat.classList.toggle("active");
+        }
+
+        window.addEventListener("scroll", function() {
+            const robot = document.getElementById("robot-assistant");
+            robot.style.top = window.scrollY + 100 + "px"; // Faz o robô flutuar
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

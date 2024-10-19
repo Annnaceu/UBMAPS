@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(to right, red, yellow, blue, green); 
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo h1 {
+    margin-left: 20px;
+}
+
+nav button {
+    background-color: rgba(0, 123, 255, 0.8); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: rgba(0, 123, 255, 1); 
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.main-section {
+    padding: 40px;
+    text-align: center;
+    flex-grow: 1;
+    min-height: 800px; 
+}
+
+.login-container {
+    margin-top: 20px;
+}
+
+.login-container form {
+    display: inline-block;
+    text-align: left;
+}
+
+.login-container input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.login-container button {
+    background-color: rgba(0, 123, 255, 0.8); 
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: rgba(0, 123, 255, 1); /* Azul mais escuro ao passar o mouse */
+}
+
+/* Mapa */
+.map-container {
+    margin-top: 20px;
+}
+
+.map-img {
+    width: 100%; /* Ajusta a largura da imagem do mapa */
+    max-width: 600px; /* Define uma largura máxima para a imagem do mapa */
+    border-radius: 10px;
+}
+
+.robot-assistant {
+    position: fixed;
+    bottom: 150px; /* Ajuste a altura para o texto */
+    right: 20px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.robot-box {
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.robot-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.robot-img {
+    width: 100px; 
+    height: 100px; 
+}
+
+.assistant-chat {
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    position: absolute;
+    bottom: 110px;
+    right: 100px;
+    z-index: 200;
+}
+
+.assistant-chat.active {
+    display: block;
+}
+
+.footer-section {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around
+}
+
+
+
+
+
+
+
+
