@@ -16,47 +16,46 @@
             <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
         </nav>
     </header>
-    
-    <div class="mobile-menu" id="mobile-menu">
-        <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#login">Login</a></li>
-        </ul>
-    </div>
-    
+
     <section class="main-section" id="home">
-        <h2>Bem Vindo ao UBMAPS</h2>
-        <p class="description">Localização fornecida gratuitamente para alunos, colaboradores e visitantes.</p>
-        <div class="login-container">
-            <h3>Faça seu Login</h3>
-            <form action="/login" method="POST">
-                <label for="username">Usuário:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit" class="login-btn">Login</button>
-            </form>
+        <div class="content-container">
+            <div class="image-wrapper">
+                <img src="imagem1.jpg" alt="Imagem 1" class="image-1">
+            </div>
+            <div class="text-container">
+                <h2>Bem-vindo ao UBMAPS</h2>
+                <p><strong>Descubra o caminho para o sucesso!</strong> No UBMAPS, somos mais do que um serviço de localização universitária — somos seu aliado na jornada acadêmica. Navegue com facilidade pelo nosso campus, explore os melhores caminhos e descubra todos os recursos que a UBM oferece. <strong>Aqui, seu futuro começa a tomar forma!</strong></p>
+            </div>
         </div>
 
-        
-        <div class="map-container">
-            <img src="mapa_ubm.png" alt="Mapa UBM" class="map-img">
+        <div class="second-content">
+            <div class="text-container right">
+                <h2>Explore Facilidades</h2>
+                <p><strong>Conecte-se com as oportunidades!</strong> A UBM é um lugar repleto de facilidades para transformar sua experiência acadêmica. Desde bibliotecas inspiradoras até espaços colaborativos, cada canto do campus foi projetado para impulsionar seu aprendizado e crescimento. <strong>Vamos juntos explorar tudo que podemos oferecer para que você alcance seus objetivos!</strong></p>
+            </div>
+            <div class="image-wrapper">
+                <img src="imagem2.jpg" alt="Imagem 2" class="image-2">
+            </div>
+        </div>
+
+        <section class="map-preview">
+            <h2>360 graus da Universidade de Barra Mansa</h2>
+            <p>Conheça a UBM</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1729412145255!6m8!1m7!1sCAoSLEFGMVFpcE42MVUzUmZXQXdwRVRPd2hYT3d0YTU3T1ZKdkVMNHg4LUlpM2ZX!2m2!1d-22.54905495989062!2d-44.17054501808762!3f0!4f0!5f0.4000000000000002"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </section>
+
+    <section class="coming-soon">
+        <div class="coming-soon-content">
+            <div class="coming-soon-text">
+                <h2>Aguarde, estamos evoluindo!</h2>
+                <p>Estamos desenvolvendo uma versão mobile do UBMAPS, para que você possa acessar nossas facilidades onde quer que esteja. <strong>Fique ligado!</strong> A sua experiência de navegação está prestes a ficar ainda melhor!</p>
+            </div>
+            <img src="imagem-mobile.jpg.JPG" alt="Em breve versão mobile" class="coming-soon-image">
         </div>
     </section>
 
-    
-    <div class="robot-assistant" id="robot-assistant">
-        <div class="robot-box">
-            <p class="robot-text">Posso ajudar você a encontrar seu caminho!</p>
-            <img src="robot-img.png" alt="Robô Assistente" class="robot-img" onclick="toggleChat()">
-            <div class="assistant-chat" id="assistant-chat">
-                <p><strong>Robô:</strong> Olá! Como posso te ajudar hoje?</p>
-                <input type="text" placeholder="Digite sua pergunta...">
-                <button class="send-btn">Enviar</button>
-            </div>
-        </div>
-    </div>
-    
     <footer class="footer-section">
         <div class="footer-content">
             <h2>UBMAPS - Sua Localização Facilitada</h2>
@@ -86,26 +85,17 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById("mobile-menu");
-            menu.classList.toggle("active");
-        }
-
-    
-        function toggleChat() {
-            const chat = document.getElementById("assistant-chat");
-            chat.classList.toggle("active");
-        }
-
-        window.addEventListener("scroll", function() {
-            const robot = document.getElementById("robot-assistant");
-            robot.style.top = window.scrollY + 100 + "px"; // Faz o robô flutuar
-        });
-    </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
 
 
