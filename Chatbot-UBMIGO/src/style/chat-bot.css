@@ -1,0 +1,115 @@
+/* Robô*/
+
+/* Robô minimizado - Ícone redondo */
+.robot-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: block;
+    z-index: 100;
+    background-color: white;
+}
+
+/* Caixa de chat */
+.chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    z-index: 200;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Cabeçalho do chat */
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Imagem redonda no header */
+#robo-photo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: solid black 0.8px;
+
+}
+
+.header-robot-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.chat-content {
+    padding: 15px;  
+}
+
+.chat-content p {
+    margin-bottom: 250px;
+}
+
+.chat-content input {
+    width: 80%;
+    height: 25px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #101010;
+    margin-bottom: 10px;
+}
+
+#send-btn-img{
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+
+.send-btn {
+    padding: 6px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+/* Estado minimizado */
+.minimized .chat-box {
+    display: none;
+}
+
+.minimized .robot-icon {
+    display: block;
+}
+
+

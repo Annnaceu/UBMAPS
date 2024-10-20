@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-bot UBMIGO</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./src/style/chat-bot.css">
+
+</head>
+<body>
+    
+    <!-- Robô Ubmigo -->
+
+    <div class="robot-assistant" id="robot-assistant">
+        <img src="../Chatbot-UBMIGO/src/image/robot-img.png" alt="Robô Assistente" class="robot-icon" id="robot-icon" onclick="toggleChat()">
+        <div class="chat-box" id="chat-box">
+            <div class="chat-header">
+                <img src="../Chatbot-UBMIGO/src/image/robot-img.png" alt="Robô Assistente" class="header-robot-icon">
+                <span>Robô Ubmigo</span>
+                <div>
+                    <button class="close-btn" onclick="toggleChat()">❌</button>
+                </div>
+            </div>
+            <div class="chat-content">
+                <p> <img src="../Chatbot-UBMIGO/src/image/robot-img.png" alt="Robô Assistente" id="robo-photo"> Olá! Como posso te ajudar hoje?</p>
+                    <input type="text" placeholder="Digite sua pergunta...">
+                    <button class="send-btn"><img src="../Chatbot-UBMIGO/src/image/botao-enviar.png" alt="botão de enviar" id="send-btn-img" ></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="./src/script/chat-bot.js"></script>
+
+</body>
+</html>
