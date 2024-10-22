@@ -385,3 +385,35 @@ nav button:hover {
         font-size: 14px;
     }
 }
+.map-preview {
+    background-color: transparent; /* Remover o fundo azul */
+    border: none; /* Garantir que não tenha borda */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto; /* Ajustar a margem para se aproximar do texto */
+    width: 95%; /* Aumentar a largura para 95% */
+    max-width: 1200px; /* Aumentar o máximo para 1200px */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Adicionando mais profundidade */
+}
+
+.map-preview {
+    background-color: transparent; /* Remover o fundo azul */
+    border: none; /* Garantir que não tenha borda */
+    border-radius: 10px;
+    padding: 20px; /* Este padding é o espaço interno */
+    text-align: center;
+    margin: 20px auto; /* Ajustar a margem para se aproximar do texto */
+    width: 100%; /* Para ocupar 100% do espaço disponível */
+    max-width: 1200px; /* Ajustar o máximo para ser um pouco maior */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Adicionando mais profundidade */
+}
+
+/* Ajustar o iframe para ocupar toda a largura */
+.map-preview iframe {
+    width: 100%; /* Ajustar para 100% da largura da .map-preview */
+    height: 450px; /* Manter a altura desejada */
+    border: none; /* Remover a borda do iframe */
+}
+
+
