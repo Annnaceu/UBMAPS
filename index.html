@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UBMAPS</title>
     <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
 </head>
 <body>
     <header>
@@ -38,10 +39,16 @@
             </div>
         </div>
 
-        <div id="chatbot-container">
-
+        <!-- Barra de pesquisa -->
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Conheça sua faculdade de ponta a ponta...">
+            <i class="fas fa-search search-icon"></i>
         </div>
 
+        <div class="information-text">
+            <h3>Salas, laboratórios, cantinas e quadras</h3>
+            <p>Com UbMaps, tudo é possível! Navegue com facilidade por todos os espaços e encontre o que precisa.</p>
+        </div>
 
         <section class="map-preview">
             <h2>360 graus da Universidade de Barra Mansa</h2>
@@ -49,6 +56,10 @@
             <iframe src="https://www.google.com/maps/embed?pb=!4v1729412145255!6m8!1m7!1sCAoSLEFGMVFpcE42MVUzUmZXQXdwRVRPd2hYT3d0YTU3T1ZKdkVMNHg4LUlpM2ZX!2m2!1d-22.54905495989062!2d-44.17054501808762!3f0!4f0!5f0.4000000000000002"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+
+        <div id="chatbot-container">
+            <!-- Aqui você pode adicionar o código do chatbot, se necessário -->
+        </div>
     </section>
 
     <section class="coming-soon">
@@ -93,9 +104,9 @@
 
     <!-- Scripts -->
     <script src="./src/scripts/script.js"></script>
-
 </body>
 </html>
+
 
 
 
